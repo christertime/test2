@@ -23,15 +23,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      # - uses: actions/checkout@v3
-      #   with:
-      #     repository: christertime/test1
-      #     token: ghs_x6QvMtdkSoGx7nDismCkQnlOtnlekW2lkmx3
+      - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
 
-      # - name: Run a one-line script
-      #   run: ruby token.arb
+      - name: Run a one-line script
+        run: ruby token.arb
 
       - name: Run a one-line script
         run: ls
