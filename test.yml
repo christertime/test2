@@ -1,0 +1,10 @@
+on:
+  push: []
+
+jobs:
+  print-username:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: github clone
+        run: echo "test"
