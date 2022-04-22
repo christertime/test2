@@ -29,9 +29,9 @@ jobs:
 
       - name: Run a one-line script
         run: | 
-          token=$(ruby token.arb "${{ secrets.APPS_KEY }}"
+          token=$(ruby token.arb "${{ secrets.APPS_KEY }}")
           echo $token
-)
+
       - name: Run a one-line script
         run: ls
 
