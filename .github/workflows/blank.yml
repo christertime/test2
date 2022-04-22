@@ -36,6 +36,8 @@ jobs:
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/app/installations/25054919/access_tokens | jq .token)
 
+          
+          installToken=$(echo "${installToken:1:${#installToken}-2}")
           echo "app_token=$installToken" >> $GITHUB_ENV
 
       - name: Run a one-line script
