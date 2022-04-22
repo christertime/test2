@@ -3,7 +3,7 @@ require 'jwt'  # https://rubygems.org/gems/jwt
 
 # Private key contents
 # private_pem = File.read(ARGV[0])
-puts ARGV[0]
+#puts ARGV[0]
 private_key = OpenSSL::PKey::RSA.new(ARGV[0])
 
 # Generate the JWT
@@ -17,4 +17,6 @@ payload = {
 }
 
 jwt = JWT.encode(payload, private_key, "RS256")
+puts "start token outout"
 puts jwt
+puts "end token output"
