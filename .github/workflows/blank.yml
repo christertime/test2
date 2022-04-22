@@ -30,10 +30,12 @@ jobs:
       - name: Run a one-line script
         run: | 
           token=$(ruby token.arb "${{ secrets.APPS_KEY }}")
-          echo $token
+          echo "app_token}={$token}" >> $GITHUB_ENV
 
       - name: Run a one-line script
-        run: ls
+        env:
+          token: ${{ env.token }}
+        run: echo $TOKEN
 
       # - name: Run a one-line script
       #   run: git clone https://x-access-token:ghs_x6QvMtdkSoGx7nDismCkQnlOtnlekW2lkmx3@github.com/christertime/test1.git
