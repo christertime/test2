@@ -30,7 +30,7 @@ jobs:
       - name: Run a one-line script
         run: | 
           token=$(ruby token.arb "${{ secrets.APPS_KEY }}")
-          echo "app_token"=$token" >> $GITHUB_ENV
+          echo "app_token=$token" >> $GITHUB_ENV
 
       - name: Run a one-line script
         env:
