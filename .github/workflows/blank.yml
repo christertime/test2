@@ -34,7 +34,7 @@ jobs:
 
       - name: Run a one-line script
         env:
-          token: ${{ env.token }}
+          token: ${{ env.app_token }}
         run: echo $TOKEN
 
       # - name: Run a one-line script
