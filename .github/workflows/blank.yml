@@ -44,6 +44,7 @@ jobs:
         run: | 
           echo "testing inline $TOKEN"
           git clone https://x-access-token:$TOKEN@github.com/christertime/test1.git
+          ls
 
       # - name: Run a one-line script
       #   run: git clone https://x-access-token:ghs_x6QvMtdkSoGx7nDismCkQnlOtnlekW2lkmx3@github.com/christertime/test1.git
