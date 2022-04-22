@@ -17,6 +17,4 @@ payload = {
 }
 
 jwt = JWT.encode(payload, private_key, "RS256")
-puts "start token outout"
 puts jwt
-puts "end token output"
