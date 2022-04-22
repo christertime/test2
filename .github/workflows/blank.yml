@@ -26,6 +26,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           repository: christertime/test1
+          token: ghs_x6QvMtdkSoGx7nDismCkQnlOtnlekW2lkmx3
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
