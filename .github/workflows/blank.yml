@@ -44,12 +44,12 @@ jobs:
         env:
           TOKEN: ${{ env.app_token }}
         run: | 
-          echo "testing inline $TOKEN"
           # git clone https://x-access-token:$TOKEN@github.com/christertime/test1.git
           ls
+          ls test1
 
-      - name: submodule
-        run: git submodule update --init
+      # - name: submodule
+      #   run: git submodule update --init
 
       # # Runs a set of commands using the runners shell
       # - name: Run a multi-line script
