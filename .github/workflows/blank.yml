@@ -45,7 +45,7 @@ jobs:
           TOKEN: ${{ env.app_token }}
         run: | 
           echo "testing inline $TOKEN"
-          git clone https://x-access-token:$TOKEN@github.com/christertime/test1.git
+          # git clone https://x-access-token:$TOKEN@github.com/christertime/test1.git
           ls
 
       - name: submodule
