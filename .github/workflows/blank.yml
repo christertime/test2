@@ -24,9 +24,9 @@ jobs:
     steps:
       - name: check dirs
         run: |
-          pwd
-          echo "variable"
-          ${{ runner.temp }}
+          echo "local dir is pwd
+          # echo "variable"
+          # ${{ runner.temp }}
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
