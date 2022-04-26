@@ -54,7 +54,7 @@ foreach ($module in $subModules) {
     }
     # git clone $module.url $module.path
 }
-ls
+ls ./submodules/test1
 Get-Location
 exit
 
