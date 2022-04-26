@@ -52,7 +52,10 @@ jobs:
           TOKEN: ${{ env.app_token }}
         run: | 
           cd ..
+          git clone https://x-access-token:$TOKEN@github.com/christertime/test4.git
+          git clone https://x-access-token:$TOKEN@github.com/christertime/test3.git
           git clone https://x-access-token:$TOKEN@github.com/christertime/test1.git
+          ls
           ls test1
 
       # - name: submodule
