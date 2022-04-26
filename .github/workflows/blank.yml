@@ -51,9 +51,9 @@ jobs:
         env:
           TOKEN: ${{ env.app_token }}
         run: | 
-          pwd
-          # git clone https://x-access-token:$TOKEN@github.com/christertime/test1.git
-          # ls
+          cd ..
+          git clone https://x-access-token:$TOKEN@github.com/christertime/test1.git
+          ls
           # ls test1
 
       # - name: submodule
