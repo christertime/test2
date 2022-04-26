@@ -46,9 +46,9 @@ foreach ($module in $subModules) {
         Write-Host "path does not exist, creating new"
         New-Item -Path . -Name $module.path -ItemType Directory
     }
-    git clone $module.url $module.path 
+    # git clone $module.url $module.path
 }
-
+Get-Location
 exit
 
 
