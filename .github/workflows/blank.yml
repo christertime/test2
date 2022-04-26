@@ -49,7 +49,7 @@ jobs:
 
       - name: pwsh
         run: |
-          Untitled-1.ps1
+          ./Untitled-1.ps1
         shell: pwsh
 
       # - name: Run a one-line script
