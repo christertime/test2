@@ -49,7 +49,7 @@ foreach ($module in $subModules) {
     if ($module.url -match '^../') {
         $remoteUrl = $module.url.Replace('../','christertime/')
         "$remoteUrl"
-        git clone https://x-access-token:$TOKEN@github.com/$remoteUrl.git $remoteUrl $module.path
+        git clone https://x-access-token:$TOKEN@github.com/$remoteUrl.git $module.path
     }
     # git clone $module.url $module.path
 }
