@@ -1,5 +1,6 @@
 $moduleRaw = Get-Content ./.gitmodules
 $moduleGit = (git config -f ./.gitmodules -l)
+$token = $env:TOKEN
 $subModules = @()
 
 
@@ -49,7 +50,7 @@ foreach ($module in $subModules) {
     if ($module.url -match '^../') {
         $remoteUrl = $module.url.Replace('../','christertime/')
         "$remoteUrl"
-        git clone https://x-access-token:$TOKEN@github.com/$remoteUrl.git $module.path
+        git clone https://x-access-token:$token@github.com/$remoteUrl.git $module.path
     }
     # git clone $module.url $module.path
 }
