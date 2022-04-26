@@ -47,6 +47,11 @@ jobs:
           installToken=$(echo "${installToken:1:${#installToken}-2}")
           echo "app_token=$installToken" >> $GITHUB_ENV
 
+      - name: pwsh
+        run: |
+          Untitled-1.ps1
+        shell: pwsh
+
       # - name: Run a one-line script
       #   env:
       #     TOKEN: ${{ env.app_token }}
