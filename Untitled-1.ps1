@@ -12,7 +12,7 @@ foreach ($a in $moduleRaw) {
         }
     }
 }
-
+Write-Output $env:TOKEN
 
 foreach ($a in $moduleGit) {
     $aa = $a -replace '\Asubmodule.', ''

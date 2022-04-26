@@ -48,6 +48,8 @@ jobs:
           echo "app_token=$installToken" >> $GITHUB_ENV
 
       - name: pwsh
+        env:
+          TOKEN: ${{ env.app_token }}
         run: |
           ./Untitled-1.ps1
         shell: pwsh
