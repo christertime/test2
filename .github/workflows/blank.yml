@@ -26,6 +26,9 @@ jobs:
         run: |
           echo "local context from pwd is $(pwd)"
           echo "runner variable is ${{ runner.temp }}"
+          cd .. 
+          mkdir testdir
+          ls
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
