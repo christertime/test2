@@ -7,3 +7,6 @@
 [submodule "test4"]
 	path = test4
 	url = ../test4
+[submodule "submodules/test.5"]
+	path = submodules/test.5
+	url = https://github.com/chrtime/test.5
